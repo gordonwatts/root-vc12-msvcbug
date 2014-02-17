@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{49112a9d-e768-48ce-8c9a-a4c55099c669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{4359ba49-bd74-46aa-9c9c-c4daf42eceb1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="verylongflie.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RConfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="G__MathFit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TClass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TCollectionProxyInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TError.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemberInspector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="RtypesImp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TFileMergeInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TIsAProxy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="RVersion.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="G__ci.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="FastAllocString.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\BinData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\BinPoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\Chi2FCN.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\DataOptions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\DataRange.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\DataVector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\DataVectorfwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\FcnAdapter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\FitConfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\FitResult.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\Fitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\FitUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\FitUtilParallel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\LogLikelihoodFCN.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\ParameterSettings.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\PoissonLikelihoodFCN.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\SparseData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fit\UnBinData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="G__ci_fproto.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Rtypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="DllImport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Rtypeinfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="snprintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="strlcpy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TGenericClassInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TSchemaHelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Riosfwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TStorage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TVersionCheck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FitMethodFunction.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IParamFunction.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IFunctionfwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IParamFunctionfwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MinimizerOptions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\WrappedFunction.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TDictionary.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TObjArray.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TObjString.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TString.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TNamed.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TMathBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TSeqCollection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TCollection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TIterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TVirtualIsAProxy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

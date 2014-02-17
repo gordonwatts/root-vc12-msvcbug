@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="verylongflie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DllImport.h" />
+    <ClInclude Include="FastAllocString.h" />
+    <ClInclude Include="Fit\BinData.h" />
+    <ClInclude Include="Fit\BinPoint.h" />
+    <ClInclude Include="Fit\Chi2FCN.h" />
+    <ClInclude Include="Fit\DataOptions.h" />
+    <ClInclude Include="Fit\DataRange.h" />
+    <ClInclude Include="Fit\DataVector.h" />
+    <ClInclude Include="Fit\DataVectorfwd.h" />
+    <ClInclude Include="Fit\FcnAdapter.h" />
+    <ClInclude Include="Fit\FitConfig.h" />
+    <ClInclude Include="Fit\FitResult.h" />
+    <ClInclude Include="Fit\Fitter.h" />
+    <ClInclude Include="Fit\FitUtil.h" />
+    <ClInclude Include="Fit\FitUtilParallel.h" />
+    <ClInclude Include="Fit\LogLikelihoodFCN.h" />
+    <ClInclude Include="Fit\ParameterSettings.h" />
+    <ClInclude Include="Fit\PoissonLikelihoodFCN.h" />
+    <ClInclude Include="Fit\SparseData.h" />
+    <ClInclude Include="Fit\UnBinData.h" />
+    <ClInclude Include="G__ci.h" />
+    <ClInclude Include="G__ci_fproto.h" />
+    <ClInclude Include="G__MathFit.h" />
+    <ClInclude Include="Math\Error.h" />
+    <ClInclude Include="Math\FitMethodFunction.h" />
+    <ClInclude Include="Math\IFunctionfwd.h" />
+    <ClInclude Include="Math\IParamFunction.h" />
+    <ClInclude Include="Math\IParamFunctionfwd.h" />
+    <ClInclude Include="Math\MinimizerOptions.h" />
+    <ClInclude Include="Math\Util.h" />
+    <ClInclude Include="Math\WrappedFunction.h" />
+    <ClInclude Include="Property.h" />
+    <ClInclude Include="RConfig.h" />
+    <ClInclude Include="Riosfwd.h" />
+    <ClInclude Include="Rtypeinfo.h" />
+    <ClInclude Include="Rtypes.h" />
+    <ClInclude Include="RtypesImp.h" />
+    <ClInclude Include="RVersion.h" />
+    <ClInclude Include="snprintf.h" />
+    <ClInclude Include="strlcpy.h" />
+    <ClInclude Include="TBuffer.h" />
+    <ClInclude Include="TClass.h" />
+    <ClInclude Include="TCollection.h" />
+    <ClInclude Include="TCollectionProxyInfo.h" />
+    <ClInclude Include="TDictionary.h" />
+    <ClInclude Include="TError.h" />
+    <ClInclude Include="TFileMergeInfo.h" />
+    <ClInclude Include="TGenericClassInfo.h" />
+    <ClInclude Include="TIsAProxy.h" />
+    <ClInclude Include="TIterator.h" />
+    <ClInclude Include="TMathBase.h" />
+    <ClInclude Include="TMemberInspector.h" />
+    <ClInclude Include="TNamed.h" />
+    <ClInclude Include="TObjArray.h" />
+    <ClInclude Include="TObject.h" />
+    <ClInclude Include="TObjString.h" />
+    <ClInclude Include="TSchemaHelper.h" />
+    <ClInclude Include="TSeqCollection.h" />
+    <ClInclude Include="TStorage.h" />
+    <ClInclude Include="TString.h" />
+    <ClInclude Include="TVersionCheck.h" />
+    <ClInclude Include="TVirtualIsAProxy.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AD45E97-9B96-4ACF-B668-31B2E8B8BD81}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
