@@ -11,9 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="verylongflie.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="DllImport.h" />
     <ClInclude Include="FastAllocString.h" />
     <ClInclude Include="Fit\BinData.h" />
@@ -76,6 +73,9 @@
     <ClInclude Include="TString.h" />
     <ClInclude Include="TVersionCheck.h" />
     <ClInclude Include="TVirtualIsAProxy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="verylongfile.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8AD45E97-9B96-4ACF-B668-31B2E8B8BD81}</ProjectGuid>
