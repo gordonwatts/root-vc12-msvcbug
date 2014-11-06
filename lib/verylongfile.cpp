@@ -216,6 +216,7 @@ namespace ROOT {
 
 namespace ROOT {
 	namespace Fit {
+		// CompilerBUG: Rewrite this "ROOT" to be ROOT1 and the whole file compiles.
 		namespace ROOT {
 			inline ::ROOT::TGenericClassInfo *GenerateInitInstance();
 			static void ROOTcLcLFit_Dictionary();
