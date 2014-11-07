@@ -1,9 +1,27 @@
-// Since CINT ignores the std namespace, we need to do so in this file.
-using namespace std;
-#include "G__MathFit.h"
+// Test file to demonstrate a small C++ compiler bug that occurs when nested namespaces are included.
+//
+// I have done my best to wittle this down to a bare minimum. If I have done my job correctly, then removing
+// any line or function argument below will cause the build to succeed.
 
-//void G__letint(int junk, int type, long value);
+namespace ROOT {
+	namespace Fit {
+		class Fitter {
+		public:
+			template <class Function>
+			bool FitFCN(Function fcn);
+		};
+	}
+}
 
+// The function body for FitFCN must be provided seperately. If "{ return false; }" is provided inline
+// above, then there is no crash.
+template<class Function>
+bool ROOT::Fit::Fitter::FitFCN(Function fcn) {
+	return false;
+}
+
+// This empty decl of a double nested namespace is required. The second "ROOT" causes the failure - if that is commented
+// out, then there is a successful compilation.
 namespace ROOT {
 	namespace Fit {
 		// THis double nested same name is what causes the compiler error
@@ -17,16 +35,9 @@ namespace ROOT {
 // If either of these lines in the code below are removed, the crash will happen.
 void badcode(struct G__param* libp)
 {
-	// This line needs to be here to cause the crash
-	G__letint(0,
-		0,
-		(long)((ROOT::Fit::Fitter*) G__getstructoffset())->FitFCN(*(ROOT::Math::IMultiGenFunction*) libp->para[0].ref, (double*)G__int(libp->para[1]), (unsigned int)G__int(libp->para[2]))
-		);
-
-	// The crash seems to happen on this line.
-	G__letint(0,
-		0,
-		(long)((ROOT::Fit::Fitter*) G__getstructoffset())->FitFCN(*(ROOT::Math::IMultiGenFunction*) libp->para[0].ref, (double*)G__int(libp->para[1]))
-		);
+	// The crash happens only if the following two lines are here (even thought they are identical).
+	// Further, both arguments must exist in the FitFCN call in order for the compiler crash to happen.
+	(long)((ROOT::Fit::Fitter*) 0)->FitFCN(0);
+	(long)((ROOT::Fit::Fitter*) 0)->FitFCN(0);
 }
 
